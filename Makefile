@@ -48,7 +48,6 @@ image:
 	
 push: image
 	# TODO: two commands, first pushes the latest image, second pushes the image tagged with specyfic tag
-	docker login -u "msprofanum" -p "Kister18!" docker.io
 	docker push ${PREFIX}/${REPO_NAME}:latest
 	docker push ${PREFIX}/${REPO_NAME}:${TAG}
 	
